@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Icon</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body style="background: linear-gradient(transparent, rgb(33, 110, 173) 72%);">
+    
+    <!--lze pouzit jakykoliv svg editor, napr https://yqnn.github.io/svg-path-editor/ -->
+    <svg width="0px" height="0px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 27" style="position: absolute;">
+        <defs>
+            <!--aby se dosahlo plne velikosti clippath na aplikovanem divu je potreba poslednimi 2 cisly viewboxu vydelit cislo 1  (1/32 = 0.03125)-->
+            <clipPath id="clip" clipPathUnits="objectBoundingBox" fill="red" transform="scale(0.03125 0.037037)">  
+                <path d="m4 16 12 10 12-10a2 2 90 00-12-12a2 2 90 00-12 12" />
+            </clipPath>
+            
+        </defs>
+    </svg>
+    
+    <div class="container text-center">
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-wrap" style="height: 100vh; width: 100vw;">
+        <div class="col-12 d-inline-flex align-self-center justify-content-center">
+            <h3 id="changeText" class="text-white text-center rounded-lg p-1 m-0"></h3>
+        </div>
+        <div class="loader_square first align-self-start"></div>    
+        <div class="loader_heart mx-4 align-self-start"></div>    
+        <div class="loader_square second align-self-start"></div>    
+    </div>
+    
+</body>
+
+</html>
