@@ -10,6 +10,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 .features li a img {
 	text-decoration: none !important;
+	border: 1.5px dashed red;
 	transition: border-radius 1s, border .5s;
 }
 
