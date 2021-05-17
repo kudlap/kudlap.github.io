@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fotogalerie</title>
+	<link rel="stylesheet" href="./assets/css/gallery.css">
+	
+	<!-- bootstrap style -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/component.css" />
+	<script src="./assets/js/modernizr.custom.js"></script>
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-7243260-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<!-- Page title etc. -->
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview border">
+							<img src="./images/gallery/img_35.JPG" alt="Cabo da Roca" class="img_zoomable img-fluid" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>Portugalsko</span>Cabo da Roca</h2>
+				</div>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview border">
+							<img src="./images/gallery/img_02.JPG" alt="Sintra" class="img_zoomable img-fluid"/>
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Portugalsko</span>Sintra</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview border">
+							<img src="./images/gallery/img_13.JPG" alt="Lisabon" class="img_zoomable img-fluid"/>
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Portugalsko</span>Lisabon</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview">
+							<img src="./images/gallery/img_21.JPG" alt="Nazaré" class="img_zoomable img-fluid"/>
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Portugalsko</span>Nazaré</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview border">
+							<img src="./images/gallery/img_36.JPG" alt="San Pellegrino" class="img_zoomable img-fluid"/>
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Itálie</span>San Pellegrino</h2>
+			</div>
+			<div class="slide" data-content="content-6">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview border">
+							<img src="./images/gallery/img_37.JPG" alt="Dolomity" class="img_zoomable img-fluid"/>
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Itálie</span>Dolomity</h2>
+			</div>
+			
+			<!-- ... -->
+			<nav class="slider__nav">
+				<button class="button button--nav-prev">
+					<i class="icon icon--arrow-left"></i>
+					<span class="text-hidden">Previous product</span>
+				</button>
+				<button class="button button--zoom">
+					<i class="icon icon--zoom"></i>
+					<span class="text-hidden">View details</span>
+				</button>
+				<button class="button button--nav-next">
+					<i class="icon icon--arrow-right"></i>
+					<span class="text-hidden">Next product</span>
+				</button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<!-- content -->
+		<section class="content" id="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_01.JPG" alt="Cabo da Roca" />
+				<div class="content__item-inner">
+					<h2>Cabo da Roca</h2>
+					<h3></h3>
+					<p>Mys Roca (portugalsky Cabo da Roca) je nejzápadnější pevninský výběžek Portugalska a kontinentální Evropy</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_02.JPG" alt="Sintra" />
+				<div class="content__item-inner">
+					<h2>Sintra</h2>
+					<h3></h3>
+					<p>Sintra byla v roce 1995 uznána chráněnou památkovou rezervací pod patronátem organizace UNESCO</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_13.JPG" alt="Lisabon" />
+				<div class="content__item-inner">
+					<h2>Lisabon</h2>
+					<h3></h3>
+					<p>Lisabon je hlavní a největší město Portugalska. Žije zde přibližně 507 tisíc obyvatel, aglomerace čítá více než 3 000 000 obyvatel</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_19.JPG" alt="Nazaré" />
+				<div class="content__item-inner">
+					<h2>Nazaré</h2>
+					<h3></h3>
+					<p>Díky nárazům velké masy vody na strmé stěny kaňonu zde vznikají ty největší vlny světa</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_36.JPG" alt="San Pellegrino" />
+				<div class="content__item-inner">
+					<h2>San Pellegrino</h2>
+					<h3></h3>
+					<p>Široký dolomitský průsmyk San Pellegrino se nachází přibližně 10 km od Moeny a je hranicí mezi provinciemi Trentino a Belluno</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-6">
+				<img class="content__item-img rounded-right img_zoomable" src="./images/gallery/img_55.JPG" alt="Dolomity" />
+				<div class="content__item-inner">
+					<h2>Dolomity</h2>
+					<h3></h3>
+					<p>Dolomity jsou jedním z horských masivů Italských Alp. Rozkládají se v severní části Itálie, na východ od Bolzanské kotliny. Pohoří nemá jednolitý hřeben, skládá se z mnoha menších, často velmi rozličných horských skupin.</p>
+				</div>
+			</div>
+			<!-- ... -->
+			<button class="button button--close">
+				<i class="icon icon--circle-cross"></i>
+				<span class="text-hidden">Close content</span>
+			</button>
+		</section>
+		<!-- /content -->
+		
+		
+	</div>
+	
+	
+	<!-- The Modal -->
+	
+	
+	<div id="myModal" class="modal">
+		<div id="modalcontainer" class="d-flex flex-column flex-center">
+			
+			
+			
+			<!-- <span class="close"> -->
+				<!-- <i class="icon icon--circle-cross" style="color: white !important;"></i> -->
+				<!-- </span> -->
+				<!-- <span class="close">&times;</span> -->
+				
+				<img class="modal-content" id="img01">
+				
+				<div id="caption"></div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="./assets/js/classie.js"></script>
+		<script src="./assets/js/dynamics.min.js"></script>
+		<script src="./assets/js/main_gallery.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+		
+		<script>
+			// create references to the modal...
+			var modal = document.getElementById('myModal');
+			// to all images -- using a class!
+			var images = document.getElementsByClassName('img_zoomable');
+			// the image in the modal
+			var modalImg = document.getElementById("img01");
+			// and the caption in the modal
+			var captionText = document.getElementById("caption");
+			
+			// Go through all of the images with our custom class
+			for (var i = 0; i < images.length; i++) {
+				var img = images[i];
+				// and attach our click listener for this image.
+				img.onclick = function(evt) {
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+			}
+			var span = document.getElementsByClassName("close")[0];
+			
+			
+			
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			// Get the content section
+			const cntent = document.getElementById('content');
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			window.addEventListener('keydown', function (event) {
+				if (event.key === 'Escape') {
+					modal.style.display = 'none';
+					//if (cntent.classList.contains('content--open')) {
+						//	cntent.classList.remove("content--open");
+					}
+				})
+				
+				
+				$(document).ready(function() {
+					
+					/* Centering the modal vertically */
+					//function alignModal() {
+						//alert("test");
+						//var modalDialog = $(this).find("#img01");
+						//alert("ahoj");
+						//modal.style.display = "flex";
+						//}
+						$(".modal").on("shown.bs.modal", function(){
+							alert("test");
+							modal.style.display = "flex";
+						});
+						
+						/* Resizing the modal according the screen size */
+						//$(window).on("resize", function() {
+							//	$(".modal:visible").each(alignModal);
+							//});
+						});
+						
+						
+						
+					</script>
+					
+					
+					<script>
+						//$('#myModal').on('shown.bs.modal', function () {
+							//	$('#myInput').trigger('focus')
+							//})
+						</script>
+					</body>
+					</html>

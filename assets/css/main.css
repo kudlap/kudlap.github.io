@@ -8,6 +8,17 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.features li a img {
+	text-decoration: none !important;
+	transition: border-radius 1s, border .5s;
+}
+
+.features li a[href="./gallery.html"]:hover img {
+	border-radius: 0% 40% 40% 40% !important;
+	border: 1px solid black;
+}
+
+
 .navbar-brand, .nav-link {
 	border: 0;
 	color: whitesmoke !important;
